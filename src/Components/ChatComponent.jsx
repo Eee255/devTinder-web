@@ -13,7 +13,7 @@ const Chat = () => {
     const conversationId = generateConversationId(receiverId, senderId);
 
     const fetchMessages = async () => {
-        const response = await fetch(`https://dev-tinder-backend-2-1wgd.onrender.com/getMessages/${receiverId}`, {
+        const response = await fetch(`/api/getMessages/${receiverId}`, {
             method: 'GET',
             credentials: 'include',
             headers: { 'Content-type': 'application/json' }

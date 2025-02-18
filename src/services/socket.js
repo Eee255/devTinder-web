@@ -3,7 +3,7 @@ import Cookies from "js-cookie";
 
 const token = Cookies.get('token');
 
-const socket = io('https://dev-tinder-backend-2-1wgd.onrender.com', {
+const socket = io('/api', {
     auth: {
         token: token
     }
